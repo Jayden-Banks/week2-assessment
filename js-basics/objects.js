@@ -1,5 +1,5 @@
 
-//////////////////PROBLEM 1////////////////////
+//////////////////PROBLEM 1////////////////////Completed!
 /*
   Create an object called 'me' that has the following keys: 
     firstName, state, age, and greeter. 
@@ -14,13 +14,24 @@
   For example: 'Hello! My name is Rubber Duck and I live in Utah"
 */
 
-//CODE HERE
+let me = {
+  firstName: 'Jayden',
+  state: 'Utah',
+  age: '27',
+  greeter: function() {
+    return `Hello! My name is ${this.firstName} and I live in ${this.state}`
+  }
+}
+
+//Test
+//console.log(me)
+//let jay = me.greeter()
+//console.log(jay)
 
 
 
 
-
-//////////////////PROBLEM 2////////////////////
+//////////////////PROBLEM 2////////////////////Completed!
 /*
   Write a function called carFactory that takes in three parameters: a make, model, and year.  
   When the function is invoked:
@@ -44,4 +55,17 @@
   }
 */
 
-//CODE HERE
+let carFactory = (make, model, year) => {
+  let obj = {
+    make: make,
+    model: model,
+    year: year
+  }
+  obj.isNew = (year > 2018) ? true : false
+  return obj
+}
+
+//Test
+// let car1 = carFactory('KIA', 'Forte', 2018)
+// let car2 = carFactory('Mustang', 'Shelby', 2019)
+// console.log(car1, car2)

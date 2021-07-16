@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+let gitDefinition = 'git is a way to save every iteration of your code so that if needed old versions can be restored. It also keeps a backup of your current work so if your local data is lost it can still be retrieved'
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+let gitHubDefinition = "github is an actual place that the git can access and push version updates too. It is a place where people can share and edit each other's code"
 
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
@@ -33,7 +33,11 @@
     following the guidelines above to describe the init command.
 */
 
-//CODE HERE
+let init = {
+    description: 'initializes a repository (sets it up as a folder that can push all information and files in it to git hub)',
+    code: 'git init'
+}
+
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -41,7 +45,10 @@
     following the guidelines above to describe the clone command.
 */
 
-//CODE HERE
+let clone = {
+    description: "Clones a repository (makes a copy) so that a user could potential edit it and push it to github creating a new updated version of the original",
+    code: "git clone httpsOrWhatever"
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -49,7 +56,10 @@
     following the guidelines above to describe the status command.
 */
 
-//CODE HERE
+let status = {
+    description: "Tells you what has been changed with the current git and the branch your on",
+    code: "git status"
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -57,7 +67,10 @@
     following the guidelines above to describe the add command.
 */
 
-//CODE HERE
+let add = {
+    description: "adds the files and changes you want to track to the queue for the next git commit and git push, keyword: Tracks",
+    code: "git 'add whatever files' "
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -65,7 +78,10 @@
     following the guidelines above to describe the commit command.
 */
 
-//CODE HERE
+let commit = {
+    description: "confirm the changes being tracked by the git add command, it also gives a note from user that describes what type of change this commit made",
+    code: "git commit -m 'message here' "
+}
 
 
 //////////////////PROBLEM 8////////////////////
@@ -74,4 +90,7 @@
     following the guidelines above to describe the push command.
 */
 
-//CODE HERE
+let push = {
+    description: "does a final push to the github or any server and offically replaces the original with the current changes and version",
+    code: "git push"
+}
